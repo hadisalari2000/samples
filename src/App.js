@@ -1,6 +1,7 @@
 import './App.css';
 import React,{useState} from "react";
 import ApiGetEmployees from "./Hooks/ApiGetEmployees";
+import UseReducer from "./Hooks/UseReducer";
 
 function App() {
 
@@ -20,7 +21,9 @@ function App() {
 
             {/*<UseEffectTimerInterval/>*/}
 
-            <ApiGetEmployees/>
+            {/*<ApiGetEmployees/>*/}
+
+            <UseReducer/>
         </>
     );
 }
