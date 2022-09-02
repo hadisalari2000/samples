@@ -1,25 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import React,{useState} from "react";
+import ApiGetEmployees from "./Hooks/ApiGetEmployees";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const[display,setDisplay]=useState(true);
+    return (
+        <>
+            {/*<CounterClickClass/>
+            <br/>
+            <HookCounterClass/>*/}
+
+            {/*<UseStateInputForm/>*/}
+
+            {/*<UseEffectClickCounter/>*/}
+
+            {/*{display && <UseEffectEventListener/>}
+            <button onClick={()=>setDisplay(!display)}>{display?'Hide Event Listener':'Show Event Listener'}</button>*/}
+
+            {/*<UseEffectTimerInterval/>*/}
+
+            <ApiGetEmployees/>
+        </>
+    );
 }
 
 export default App;
