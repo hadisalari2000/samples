@@ -2,6 +2,7 @@ import './App.css';
 import React,{useState} from "react";
 import ApiGetEmployees from "./Hooks/ApiGetEmployees";
 import UseReducer from "./Hooks/UseReducer";
+import ComponentA from "./Context/ComponentA";
 
 function App() {
 
@@ -23,7 +24,9 @@ function App() {
 
             {/*<ApiGetEmployees/>*/}
 
-            <UseReducer/>
+            {/*<UseReducer/>*/}
+
+            <ComponentA/>
         </>
     );
 }
